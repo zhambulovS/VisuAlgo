@@ -127,8 +127,8 @@
 <body>
      <div id='main'>
      	<div class="main__heading">
-			<a href="https://github.com/jhabarsingh/DSALGO-VISUALIZER" target="_blank">
-				<img src="https://github.com/jhabarsingh/DSALGO-VISUALIZER/blob/main/images/github.png?raw=true" 
+			<a href="https://github.com/zhambulovS/VisuAlgo" target="_blank">
+				<img src="https://github.com/zhambulovS/VisuAlgo/blob/main/images/github.png?raw=true" 
 					style="height:40px;margin-right:10px;"
 				/>
 			</a>
@@ -159,93 +159,78 @@
 		 })
 		
 		 let details = [
-     		{
-     			heading: 'Time Complexity',
-     			image: `images/time_complexity.png`,
-     			link: 'templates/time_complexity.html',
-     			sub_topics: [
-     				"Big Oh",
-     				"Big Omega",
-     				"Big Theta"
+    {
+        heading: 'Временная сложность',
+        image: `images/time_complexity.png`,
+        link: 'templates/time_complexity.html',
+        sub_topics: [
+            "Большое О",
+            "Большая Омега",
+            "Большая Тета"
+        ]
+    },
+    {
+        heading: 'Массивы',
+        image: `images/array.png`,
+        link: 'templates/array.html',
+        sub_topics: [
+            "создание",
+            "вставка",
+            "удаление",
+            "линейный поиск",
+            "префиксная сумма",
+            "алгоритм Кадане",
+            "скользящие окна",
+            "разделение",
+            "захват дождевой воды"
+        ]
+    },
+    {
+        heading: 'Алгоритмы сортировки',
+        image: 'images/sort.png',
+        link: 'templates/sort.html',
+        sub_topics: [
+            "пузырьковая сортировка",
+            "сортировка выбором",
+            "сортировка вставками",
+            "слияние",
+            "быстрая сортировка",
+            "пирамидальная сортировка",
+            "сортировка Шелла",
+            "подсчётом"
+        ]
+    },
+    {
+        heading: 'Стек',
+        image: `images/stack.png`,
+        link: 'templates/stack.html',
+        sub_topics: [
+            "создание",
+            "добавление (push)",
+            "удаление (pop)",
+            "просмотр вершины (peek)",
+            "сбалансированные скобки",
+            "инфиксная запись в постфиксную",
+            "инфиксная запись в префиксную",
+            "вычисление постфиксной записи",
+            "вычисление префиксной записи",
+            "максимальная площадь под гистограммой",
+            "минимальный стек O(1)"
+        ]
+    },
+    {
+        heading: 'Очередь',
+        image: 'images/queue.png',
+        link: 'templates/queue.html',
+        sub_topics: [
+            "создание",
+            "постановка в очередь (enqueue)",
+            "удаление из очереди (dequeue)",
+            "поиск в ширину (BFS)"
+        ]
+    },
+]
 
-     			]
-     		},
-     		{
-     			heading: 'Array',
-     			image: `images/array.png`,
-     			link: 'templates/array.html',
-     			sub_topics: [
-     				"create",
-     				"insert",
-     				"delete",
-                         "linear search",
-                         "prefix sum",
-                         "kadane",
-                         "sliding windows",
-                         "partitioning",
-                         "rain water trapping"
-
-     			]
-     		},
-               {
-                    heading: 'Number Theory',
-                    image: `images/number_theory.png`,
-                    link: 'templates/number_theory.html',
-                    sub_topics: [
-                         "gcd",
-                         "Extended Eucledian",
-                         "Sieve of Eratosthenes",
-                         "Binary Exponentiation"
-                    ]
-               },
-     		{
-     			heading: 'Stack',
-     			image: `images/stack.png`,
-     			link: 'templates/stack.html',
-     			sub_topics: [
-     				"create",
-     				"push",
-     				"pop",
-     				"peek",
-                         "Balanced bracket",
-                         "infix to postfix",
-                         "infix to prefix",
-                         "postfix evaluation",
-                         "prefix evaluation",
-                         "Max Area under histogram",
-                         "Min Stack O(1)"
-
-     			]
-     		},
-     		{
-     			heading: 'Queue',
-     			image: 'images/queue.png',
-     			link: 'templates/queue.html',
-     			sub_topics: [
-     				"create",
-     				"enqueue",
-     				"dequeue",
-                         "bfs"
-     			]
-     		},
-               {
-                    heading: 'Sort Algorithms',
-                    image: 'images/sort.png',
-                    link: 'templates/sort.html',
-                    sub_topics: [
-                         "bubble",
-                         "selection",
-                         "insertion",
-                         "merge",
-                         "quick",
-                         // "radix",
-                         "heap",
-                         "shell",
-                         "counting"
-                    ]
-               },
-     		
-     	]
 
         if(!localStorage.getItem("counter"))
 			pop_up();
