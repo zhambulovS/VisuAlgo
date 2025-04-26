@@ -65,11 +65,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-	<p class='heading'>Sorting Algorithm</p>
+	<p class='heading'>Алгоритмы сортировки</p>
 	<div class="visualise">
 		<select name="type" class="visualise__array">
-			<option value="sort_algorithms">Visualize</option>
-			<option value="sort_array">Use Array</option>
+			<option value="sort_algorithms">Визуализация</option>
+			<option value="sort_array">Использовать массив</option>
 		</select>
 	</div>
 	<div class='grid'></div>
@@ -86,39 +86,24 @@
 		let dir_name = "sort_algorithms"
 
 		let algo = [
-			{
-				name: 'Bubble sort',
-				link: `bubble.html`
-			},
-			{
-				name: 'Selection sort',
-				link: `selection.html`
-			},
-			{
-				name: 'Insertion sort',
-				link: `insertion.html`
-			},
-			{
-				name: 'Merge sort',
-				link: `merge.html`
-			},
-			{
-				name: 'Quick sort',
-				link: `quick.html`
-			},
-			{
-				name: 'Counting sort',
-				link: `counting.html`
-			},
-			{
-				name: 'Heap sort',
-				link: `heap.html`
-			},
-			{
-				name: 'Shell sort',
-				link: `shell.html`
-			},
-		]
+    {
+        name: 'Bubble sort(сортировка пузырьком)', // Название алгоритма (сортировка пузырьком)
+        link: 'bubble.html'   // Ссылка на страницу с объяснением алгоритма
+    },
+    {
+        name: 'Selection sort(сортировка выбором)', // Название алгоритма (сортировка выбором)
+        link: 'selection.html'  // Ссылка на страницу с объяснением алгоритма
+    },
+    {
+        name: 'Insertion sort(сортировка вставками)', // Название алгоритма (сортировка вставками)
+        link: 'insertion.html'  // Ссылка на страницу с объяснением алгоритма
+    },
+    {
+        name: 'Merge sort(сортировка слиянием)', // Название алгоритма (сортировка слиянием)
+        link: 'merge.html'  // Ссылка на страницу с объяснением алгоритма
+    },
+];
+
 		init();
 
 // Utility function 
